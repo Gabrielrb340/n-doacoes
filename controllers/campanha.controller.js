@@ -1,15 +1,12 @@
 var Campanha = require('../models/campanha.model');
-exports.test = (req, res) => {
-    res.send('Working');
-}
 exports.create = async function(req, res) {
     let aval = new Campanha({
-        NotaAvaliacao: req.body.notaAvalicao,
-        Descricao: req.body.descricao,
-        Quantidade: req.body.quantidade,
-        DescricaoCampanha: req.body.descricaoCampanha,
-        NomeParceiro: req.body.nomeParceiro,
-        Usuario: req.body.usuario,
+        NotaAvaliacao: req.body.NotaAvaliacao,
+        Descricao: req.body.Descricao,
+        Quantidade: req.body.Quantidade,
+        DescricaoCampanha: req.body.DescricaoCampanha,
+        NomeParceiro: req.body.NomeParceiro,
+        Usuario: req.body.Usuario,
     });
     aval.save(function(err) {
         if (err) {

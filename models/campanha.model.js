@@ -9,4 +9,4 @@ let CampanhaSchema = new Schema({
     Usuario: { type: Number, required: true }
 });
 // Exportar o modelo
-module.exports = mongoose.model('Campanha', CampanhaSchema);
+module.exports = mongoose.model('Campanhas', CampanhaSchema);
